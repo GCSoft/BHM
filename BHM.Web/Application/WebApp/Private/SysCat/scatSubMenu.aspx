@@ -39,6 +39,9 @@
         </table>
     </asp:Panel>
 
+    <asp:Panel ID="pnlBreak" runat="server" CssClass="BreakPanel">
+    </asp:Panel>
+
     <asp:Panel ID="pnlBotones" runat="server" CssClass="ButtonPanel">
         <asp:Button ID="btnBuscar" runat="server" Text="Buscar" CssClass="Button_General" Width="125px" OnClick="btnBuscar_Click" />&nbsp;
         <asp:Button ID="btnNuevo" runat="server" Text="Nuevo" CssClass="Button_General" Width="125px" OnClick="btnNuevo_Click" />

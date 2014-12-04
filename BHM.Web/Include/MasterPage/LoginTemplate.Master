@@ -21,7 +21,7 @@
         <asp:UpdatePanel ID="updMaster" runat="server">
             <ContentTemplate>
 
-                <asp:Panel ID="pnlHeader" runat="server" CssClass="MasterPageHeader" BackImageUrl="~/Include/Image/Web/BannerFill.png">
+                <asp:Panel ID="pnlHeader" runat="server" CssClass="MasterHeader" BackImageUrl="~/Include/Image/Web/BannerFill.png">
                     <img id="imgBanner" alt="Banner" runat="server" src="~/Include/Image/Web/Banner.png" />
                 </asp:Panel>
                 
@@ -30,7 +30,7 @@
                     </asp:ContentPlaceHolder>
                 </asp:Panel>
 
-                <asp:Panel ID="pnlPoweredBy" runat="server" CssClass="MasterPagePoweredBy">
+                <asp:Panel ID="pnlPoweredBy" runat="server" CssClass="MasterPoweredBy">
                     <img id="imgPoweredBy" alt="GCSoft" runat="server" src="~/Include/Image/Web/GCSoft.png" />
                 </asp:Panel>
 

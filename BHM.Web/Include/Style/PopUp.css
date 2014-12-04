@@ -49,7 +49,7 @@
 	border:0px solid red;
 	color:Red;
 	display:block;
-	font-family:Arial, Sans-Serif;
+	font-family:'Lucida Grande',Tahoma,Verdana,Arial,Sans-serif;
 	font-size:9px;
 }
 
@@ -98,7 +98,7 @@ PopUpHeaderTable .Cierre{
 .PopUpBodyTable .Etiqueta{
 	border:0px solid #4B4878;
 	color:#4B4878;
-	font-family: Arial, Sans-Serif;
+	font-family:'Lucida Grande',Tahoma,Verdana,Arial,Sans-serif;
 	font-size:12px;
 	font-weight:bold;
 	text-align:left;
@@ -108,7 +108,7 @@ PopUpHeaderTable .Cierre{
 .PopUpBodyTable .Contenedor{
 	background-color: #ededed;
 	color:#4B4878;
-	font-family: Arial, Sans-Serif;
+	font-family:'Lucida Grande',Tahoma,Verdana,Arial,Sans-serif;
 	font-size:12px;
 	font-weight:bold;
 	text-align:center;

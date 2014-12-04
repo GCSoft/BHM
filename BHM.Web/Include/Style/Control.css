@@ -13,7 +13,7 @@
 	background-color: #4B4878;
 	color: white;
 	cursor: pointer;
-	font-family: Arial, Sans-Serif;
+	font-family: 'Lucida Grande',Tahoma,Verdana,Arial,Sans-serif;
 	font-size: 13px;
 	font-weight: bold;
 	margin-top: 5px;
@@ -36,7 +36,7 @@
 	border: 1px solid #4B4878;
 	color: white;
 	cursor: pointer;
-	font-family: Arial, Sans-Serif;
+	font-family: 'Lucida Grande',Tahoma,Verdana,Arial,Sans-serif;
 	font-size: 13px;
 	font-weight: bold;
 	margin-top: 5px;
@@ -135,7 +135,7 @@
 
 /*BOTONES*/
 .Button_General{
-  	font-family: Arial;
+  	font-family:'Lucida Grande',Tahoma,Verdana,Arial,Sans-serif;
 	font-size: 11px;
 	color: #FFFFFF;
 	cursor:pointer;
@@ -159,8 +159,24 @@
 	height:20px;
 }
 
+.Button_General:Hover{
+  	font-family:'Lucida Grande',Tahoma,Verdana,Arial,Sans-serif;
+	font-size: 11px;
+	color: #4B4878;
+	cursor:pointer;
+	background-color: #FFFFFF;
+	margin-top: 4px;
+	font-weight: bold;
+	margin-bottom: 4px;
+	padding-top: 2px;
+	padding-right: 0px;
+	padding-bottom: 2px;
+	padding-left: 0px;
+	height:20px;
+}
+
 .Button_General_Disabled{
-  	font-family: Arial;
+  	font-family: 'Lucida Grande',Tahoma,Verdana,Arial,Sans-serif;
 	font-size: 11px;
 	color: #FFFFFF;
 	background-color: #CCCCCC;
@@ -298,7 +314,7 @@
 	background-color: #FFFFFF;
 	color:#333333;
 	cursor:pointer;
-	font-family: 'Lucida Grande',Tahoma,Verdana,Arial,Sans-serif;
+	font-family:'Lucida Grande',Tahoma,Verdana,Arial,Sans-serif;
 	font-size: 13px;
 	font-weight:lighter;
 	height:25px;
@@ -325,7 +341,7 @@
 	background-color: #549CC6;
 	border: 1px solid #C1C1C1;
 	color: #FFFFFF;
-	font-family: 'Lucida Grande',Tahoma,Verdana,Arial,Sans-serif;
+	font-family:'Lucida Grande',Tahoma,Verdana,Arial,Sans-serif;
 	font-size: 12px;
 	font-weight:normal;
 	height: 28px;
@@ -349,7 +365,7 @@
 	background-color: #FFFFFF;
 	border: 1px solid #C1C1C1;
 	color: #333333;
-	font-family: 'Lucida Grande',Tahoma,Verdana,Arial,Sans-serif;
+	font-family:'Lucida Grande',Tahoma,Verdana,Arial,Sans-serif;
 	font-size: 12px;
 	font-weight:normal;
 	height: 22px;
@@ -399,7 +415,7 @@
 	background-color: #4B4878;
 	border: 1px solid #C1C1C1;
 	color: #C1C1C1;
-	font-family: 'Lucida Grande',Tahoma,Verdana,Arial,Sans-serif;
+	font-family:'Lucida Grande',Tahoma,Verdana,Arial,Sans-serif;
 	font-size: 12px;
 	font-weight:normal;
 	height: 22px;
@@ -413,7 +429,7 @@
 .Grid_Row_Over td {
 	border: solid 1px #C1C1C1;
 	color: #C1C1C1;
-	font-family: 'Lucida Grande',Tahoma,Verdana,Arial,Sans-serif;
+	font-family:'Lucida Grande',Tahoma,Verdana,Arial,Sans-serif;
 	font-size: 12px;
 	font-weight:normal;
 	height: 22px;
@@ -559,7 +575,7 @@
 	background-color: #FFFFFF;
 	border: 1px solid #C1C1C1;
 	color: #333333;
-	font-family: 'Lucida Grande',Tahoma,Verdana,Arial,Sans-serif;
+	font-family:'Lucida Grande',Tahoma,Verdana,Arial,Sans-serif;
 	font-size: 12px;
 	font-weight: normal;
 	height: 22px;
@@ -570,7 +586,7 @@
 	background-color: #eaeaea;
 	border: 1px solid #C1C1C1;
 	color: #333333;
-	font-family: 'Lucida Grande',Tahoma,Verdana,Arial,Sans-serif;
+	font-family:'Lucida Grande',Tahoma,Verdana,Arial,Sans-serif;
 	font-size: 12px;
 	font-weight: normal;
 	height: 22px;

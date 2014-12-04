@@ -7,6 +7,18 @@
 '
 '----------------------------------------------------------------------------------------------------------------------------------*/
 
+.BreakPanel{
+    border-top:solid 1px #4B4878;
+    clear:both;
+    float:left;
+    height:20px;
+    text-align:left;
+    top:20px;
+    padding: 0px;
+    position:relative;
+	width: 100%;
+}
+
 .ButtonPanel{
     border:solid 0px #000000;
     clear:both;

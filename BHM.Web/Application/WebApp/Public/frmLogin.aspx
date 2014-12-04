@@ -71,7 +71,7 @@
                                 <td style="width: 10px;"></td>
                                 <td>
                                     <div style="left: 3px; position: relative;">
-                                        <asp:Button ID="btnRecoveryPassword" runat="server" Text="Recuperar Contraseña" CssClass="Button_General" OnClick="btnRecoveryPassword_Click" Width="125px"></asp:Button>
+                                        <asp:Button ID="btnRecoveryPassword" runat="server" Text="Recuperar Contraseña" CssClass="Button_General" OnClick="btnRecoveryPassword_Click" Width="150px"></asp:Button>
                                     </div>
                                 </td>
                             </tr>

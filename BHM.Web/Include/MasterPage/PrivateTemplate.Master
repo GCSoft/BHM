@@ -1,0 +1,90 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PrivateTemplate.master.cs" Inherits="BHM.Web.Include.MasterPage.PrivateTemplate" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<%@ Register src="../WebUserControls/wucMenu.ascx" tagname="wucMenu" tagprefix="wuc" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>BHM</title>
+    <meta content="GCSoft S.A. de C.V." name="autor" />
+    <link href="~/Include/Style/Control.css" rel="Stylesheet" type="text/css" />
+    <link href="~/Include/Style/MasterPage.css" rel="Stylesheet" type="text/css" />
+    <link href="~/Include/Style/Panel.css" rel="Stylesheet" type="text/css" />
+    <link href="~/Include/Style/PopUp.css" rel="Stylesheet" type="text/css" />
+    <link href="~/Include/Style/Table.css" rel="Stylesheet" type="text/css" />
+    <link href="~/Include/Style/Text.css" rel="Stylesheet" type="text/css" />
+    <link href="~/Include/Style/Wait.css" rel="Stylesheet" type="text/css" />
+    <script src="../../../../Include/Javascript/GCSoft/GCSoft.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        // Listener
+        document.onkeydown = function () {
+            var keyPressed = window.event.keyCode;
+
+            switch (keyPressed) {
+                case 13:		// Enter en cualquier parte de la página es deshabilitado por mandar al evento Click de salir
+                    return false;
+            }
+
+        };
+
+        </script>
+    <asp:ContentPlaceHolder ID="cntPrivateTemplateHeader" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ToolkitScriptManager ID="smngPrivate" runat="server"></asp:ToolkitScriptManager>
+        <asp:UpdatePanel ID="updMaster" runat="server">
+            <ContentTemplate>
+                
+                <asp:Panel ID="pnlHeader" runat="server" CssClass="MasterPageHeader" BackImageUrl="~/Include/Image/Web/BannerFill.png">
+                    <img id="imgBanner" alt="Banner" runat="server" src="~/Include/Image/Web/Banner.png" />
+                </asp:Panel>
+
+                <asp:Panel ID="pnlUserName" runat="server" CssClass="MasterUserName">
+                    <table border="0" style="width:100%">
+						<tr>
+							<td><asp:Label ID="lblUserName" runat="server" CssClass="UserNameText" Text="Bienvenido: Rubén Cobos Hernández | SIAQ_Des | " Height="20px"></asp:Label></td>
+							<td style="width:51px;"><asp:ImageButton ID="imgExit" runat="server" ImageUrl="~/Include/Image/Web/SalirOff.png" OnClick="imgExit_Click" /></td>
+						</tr>
+					</table>
+                </asp:Panel>
+                
+                <asp:Panel ID="pnlBody" CssClass="MasterBody" runat="server">
+                    <table style="width:100%">
+						<tr>
+							<td style="width:260px">
+                                <asp:Panel ID="pnlMenu" runat="server" CssClass="MasterMenu">
+                                    <wuc:wucMenu ID="wucMenuPrincipal" runat="server"></wuc:wucMenu>
+                                </asp:Panel>
+							</td>
+							<td>
+                                <asp:Panel ID="pnlCanvas" runat="server" CssClass="MasterCanvas">
+                                    <asp:ContentPlaceHolder ID="cntPrivateTemplateBody" runat="server"></asp:ContentPlaceHolder>
+                                </asp:Panel>
+							</td>
+						</tr>
+					</table>
+                </asp:Panel>
+                
+                <asp:Panel ID="pnlPoweredBy" runat="server" CssClass="MasterPagePoweredBy">
+                    <img id="imgPoweredBy" alt="GCSoft" runat="server" src="~/Include/Image/Web/GCSoft.png" />
+                </asp:Panel>
+
+                <asp:UpdateProgress runat="server" ID="uprMaster" AssociatedUpdatePanelID="updMaster">
+                    <ProgressTemplate>
+                        <asp:Panel ID="pnlWait" runat="server" CssClass="LoadingDiv">
+                            <asp:Panel ID="pnlImageWait" runat="server" CssClass="LoadingImageDiv">
+                                <asp:Image ID="imgWait" AlternateText="Cargando..." ImageUrl="~/Include/Image/Web/Loading.gif" runat="server" />
+                            </asp:Panel>
+                        </asp:Panel>
+                    </ProgressTemplate>
+                </asp:UpdateProgress>
+            
+            </ContentTemplate>
+        </asp:UpdatePanel>
+    </form>
+</body>
+</html>

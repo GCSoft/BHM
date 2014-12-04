@@ -1,0 +1,17 @@
+# git ignore file
+BHM.BusinessProcess/bin/
+BHM.BusinessProcess/obj/
+BHM.DataAccess/bin/
+BHM.DataAccess/obj/
+BHM.Entity/bin/
+BHM.Entity/obj/
+BHM.Web/BHM.Web.Publish.xml
+BHM.Web/App.config
+BHM.Web/DB.config
+BHM.Web/Web.config
+BHM.Web/Web.Debug.config
+BHM.Web/Web.Release.config
+BHM.Web/bin/
+BHM.Web/obj/
+solBHM.sln
+solBHM.v11.suo
